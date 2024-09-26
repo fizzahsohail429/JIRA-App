@@ -1,0 +1,35 @@
+modules:
+  jira:adminPage:
+    - key: configure-page
+      function: config-configure-page
+      title: Configure SIRP Application
+      useAsConfig: true
+
+  jira:issuePanel:
+    - key: SIRP-App
+      function: main
+      title: SIRP-SOAR456
+      icon: https://www.sirp.io/wp-content/uploads/2022/05/icon.png
+  trigger:
+    - key: issue-updated-event
+      function: trigger-function
+      events:
+        - avi:jira:updated:issue
+  function:
+    - key: main
+      handler: index.run
+    - key: config-configure-page
+      handler: config.runConfigurePage
+    - key: trigger-function
+      handler: trigger.run
+app:
+  id: ari:cloud:ecosystem::app/cb997320-63a3-4b9f-80e0-b039b0ba9655
+permissions:
+  scopes:
+    - read:jira-work
+    - write:jira-work
+    - storage:app
+  external:
+      fetch:
+        backend:
+          - '*'
