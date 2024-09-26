@@ -1,0 +1,33 @@
+{
+  "name": "SIRP SOAR",
+  "version": "1.0",
+  "author": {
+    "name": "Your Name",
+    "email": "info@sirp.io"
+  },
+  "defaultLocale": "en",
+  "private": true,
+  "location": {
+    "support": {
+      "ticket_sidebar": "assets/iframe.html"
+    }
+  },
+  "frameworkVersion": "2.0",
+  "parameters": [
+    {
+      "name": "SIRP_URL",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "SIRP_APIKey",
+      "type": "text",
+      "required": true
+    },
+    {
+      "name": "AutoCloseStatus",
+      "type": "checkbox",
+      "label": "Automatically Close Status"
+    }
+  ]
+}

@@ -1,0 +1,66 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    text-align: center;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    gap:1rem;
+    padding:1rem 0;
+    height:10rem;
+}
+
+.heading {
+    font-weight: bold;
+    font-size:50px;
+    
+}
+#loading{
+  height:80px;
+  text-align:center;
+}
+a {
+    font-size: 16px;
+    cursor: pointer;
+    color: #4caf50; /* Set the color to green */
+    text-decoration: none;
+    margin-bottom: 10px;
+}
+
+a:hover {
+    text-decoration: underline; /* Add underline on hover */
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:20px;
+    border: none;
+}
+
+
+#statusMessage {
+    margin-top: 20px;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/*#checkConnectivity {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius:20px;
+    border: none;
+}
+*/
+/*#checkConnectivity:hover {
+    background-color: #45a049;
+}*/

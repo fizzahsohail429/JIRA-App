@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ticket Sidebar App</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/npm/@zendeskgarden/css-bedrock@7.0.21,npm/@zendeskgarden/css-utilities@4.3.0">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+      <a id="checkConnectivity" href="#">Check Connectivity</a>
+      <button id="changeButton">Close Status</button>
+      <img id="loading" src="loader.gif" alt="Loading..." style="display:none;">
+      <div id="statusMessage"></div>
+      </div>
+    <input type="hidden" id="AutoCloseStatus" value="{settings.AutoCloseStatus}}">
+    <script src="https://static.zdassets.com/zendesk_app_framework_sdk/2.0/zaf_sdk.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
+
+

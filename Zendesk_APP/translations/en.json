@@ -1,0 +1,8 @@
+{
+  "app": {
+    "name": "SIRP SOAR",
+    "short_description": "App to close Incident on SIRP.",
+    "long_description": "App to close Incident on SIRP.",
+    "installation_instructions": "Simply click install."
+  }
+}
